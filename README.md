@@ -43,8 +43,8 @@ A forma mais simples de testar a aplicação é utilizando o Docker, que sobe o 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
-    cd NOME-DO-REPO
+    git clone [https://github.com/Karllos0988/angular-tourism-app.git](https://github.com/Karllos0988/angular-tourism-app.git)
+    cd angular-tourism-app
     ```
 
 2.  **Suba os containers:**
