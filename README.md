@@ -1,59 +1,85 @@
-# PasseioApp
+# 🏖️ Passeio App - Guia e Gestão de Turismo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
-## Development server
+O **Passeio App** é uma plataforma web responsiva voltada para o turismo, permitindo que usuários cadastrem, organizem e busquem por **lugares turísticos** e suas respectivas **categorias**.
 
-To start a local development server, run:
+Este projeto foi desenvolvido como um portfólio Fullstack (simulado) para consolidar conhecimentos avançados em **Angular (NgModules)**, integração com APIs, autenticação OAuth2 e orquestração de containers com **Docker**.
 
-```bash
-ng serve
-```
+## 🎯 Objetivo e Arquitetura
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Embora o ecossistema Angular moderno tenda aos *Standalone Components*, este projeto foi **intencionalmente arquitetado utilizando NgModules**.
 
-## Code scaffolding
+O objetivo foi demonstrar domínio sobre a estrutura clássica e robusta do framework, habilidade essencial para atuar em grandes projetos corporativos e manutenção de sistemas legados, compreendendo profundamente a injeção de dependências, lazy loading e modularização.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🚀 Funcionalidades Principais
 
-```bash
-ng generate component component-name
-```
+-   **Gestão de Lugares:** Cadastro completo de pontos turísticos com descrições e detalhes.
+-   **Categorização:** Organização dos passeios por categorias (ex: Praias, Museus, Parques).
+-   **Busca Inteligente:** Filtros para encontrar lugares específicos rapidamente.
+-   **Autenticação Google:** Login seguro e rápido via OAuth 2.0.
+-   **Interface Responsiva:** Layout fluido adaptável a celulares e desktops (Angular Material + FlexLayout).
+-   **Guards de Rota:** Proteção de áreas administrativas apenas para usuários logados.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng generate --help
-```
+-   **Frontend:** Angular (v20), Angular Material, RxJS.
+-   **Estilização:** SCSS, Taildwind.
+-   **Backend (Simulado):** JSON Server (API RESTful).
+-   **Infraestrutura:** Docker, Docker Compose, Nginx (Alpine Linux).
+-   **Auth:** angular-oauth2-oidc.
 
-## Building
+## 🐳 Como Rodar com Docker Compose (Recomendado)
 
-To build the project run:
+A forma mais simples de testar a aplicação é utilizando o Docker, que sobe o ambiente completo (Frontend + API) com um único comando, sem necessidade de instalar Node.js ou dependências locais.
 
-```bash
-ng build
-```
+### Pré-requisitos
+-   Ter o [Docker](https://www.docker.com/) e o [Docker Compose](https://docs.docker.com/compose/install/) instalados.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Passo a Passo
 
-## Running unit tests
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
+    cd NOME-DO-REPO
+    ```
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+2.  **Suba os containers:**
+    Execute o comando abaixo na raiz do projeto (onde está o arquivo `docker-compose.yml`):
+    ```bash
+    docker compose up --build
+    ```
+    *Aguarde o build terminar. Pode levar alguns instantes na primeira vez.*
 
-```bash
-ng test
-```
+3.  **Acesse a Aplicação:**
+    -   🖥️ **Frontend (Site):** Abra [http://localhost](http://localhost) no seu navegador.
+    -   ⚙️ **Backend (API):** Disponível em [http://localhost:4000](http://localhost:4000).
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+4.  **Para parar a aplicação:**
+    Pressione `Ctrl + C` no terminal ou rode:
+    ```bash
+    docker compose down
+    ```
 
-```bash
-ng e2e
-```
+## 💻 Como Rodar Localmente (Desenvolvimento)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Caso queira rodar sem Docker para editar o código:
 
-## Additional Resources
+1.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+2.  **Inicie a API:**
+    ```bash
+    npm run api
+    ```
+3.  **Inicie o Angular:**
+    ```bash
+    ng serve
+    ```
+4.  **Acesse:** `http://localhost:4200`
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

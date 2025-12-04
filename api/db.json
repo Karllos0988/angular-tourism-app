@@ -1,0 +1,76 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Restaurantes",
+      "descricao": "Lugares para comer"
+    },
+    {
+      "id": "2",
+      "nome": "Shopping",
+      "descricao": "lugares para compras e passear "
+    },
+    {
+      "id": "6251",
+      "nome": "PaintBall",
+      "descricao": "Brincadeiras de tiro"
+    },
+    {
+      "id": "5368",
+      "nome": "Academia",
+      "descricao": "Lugar para se exercitar"
+    },
+    {
+      "id": "4067",
+      "nome": "Praias",
+      "descricao": "Lugar para banhar e passear"
+    },
+    {
+      "nome": "Hotéis ",
+      "descricao": "Estabelecimento comercial que oferece hospedagem temporária para viajantes, com quartos mobiliados e serviços básicos como recepção 24 horas e limpeza.",
+      "id": "YQqmn43"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "bf22",
+      "nome": "Praia do Cabo Branco",
+      "categoria": "Praias",
+      "localizacao": "João Pessoa - Cabo Branco",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/b3/42/7f/photo3jpg.jpg?w=1200&h=-1&s=1",
+      "avaliacao": "3"
+    },
+    {
+      "id": "df4d",
+      "nome": "Praia do Bessa",
+      "categoria": "Praias",
+      "localizacao": "João Pessoa - Bessa",
+      "urlFoto": "https://www.bessabeachhotel.com.br/wp-content/uploads/2018/05/20032018-DJI_0129.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "id": "83ce",
+      "nome": "Shopping Manaira",
+      "categoria": "Shopping",
+      "localizacao": "R. Manoel Arruda Cavalcante, 805 - Manaíra, João Pessoa - PB, 58033-455",
+      "urlFoto": "https://cdn.execut.com.br/experience/ab51fb804e5c67f0cccea0654cc131b1/c/manaira-shopping-photo.jpg",
+      "avaliacao": "4"
+    },
+    {
+      "nome": "Gulliver Mar Restaurante",
+      "categoria": "Restaurantes",
+      "localizacao": " Av. Cabo Branco, 5160 - Cabo Branco, João Pessoa - PB, 58045-010",
+      "urlFoto": "https://cdn.execut.com.br/experience/04d8631c3ec50eb79f450176424caec2/c/gulliver-mar-photo.jpg",
+      "avaliacao": "5",
+      "id": "VifBtyI"
+    },
+    {
+      "nome": "Flat Mar Cabo Branco",
+      "categoria": "Hotéis ",
+      "localizacao": " Av. Cabo Branco, 2316 - Cabo Branco, João Pessoa - PB, 58045-010",
+      "urlFoto": "https://images3.motor-reserva.com.br/curl/motor_reserva/images/configuracao_estabelecimento/cliente_822/2017081715029747693.jpg",
+      "avaliacao": "3",
+      "id": "7e7ehNL"
+    }
+  ]
+}

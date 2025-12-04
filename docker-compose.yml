@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  
+  api:
+    build: 
+      context: ./api
+    container_name: passeio-app-api
+    ports:
+      - "4000:4000" 
+    volumes:
+      - ./api/db.production.json:/app/db.production.json
+    networks:
+      - minha-rede
+
+  
+  frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: passeio-front
+    ports:
+      - "80:80" 
+    depends_on:
+      - api # Garante que o front só tente subir depois que a API iniciar
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:
+    driver: bridge
